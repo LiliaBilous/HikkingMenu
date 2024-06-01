@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
-import Home from '../components/Home.vue';
+import Home from '../views/Home.vue';
 
 const router = createRouter({
     scrollBehavior() {
@@ -13,10 +13,18 @@ const router = createRouter({
       },
       {
         path: "/menu",
-        component: () => import('../components/views/MenuByDays.vue'),
+        component: () => import('../views/MenuByDays.vue'),
+      },
+      {
+        path: "/products",
+        component: () => import('../views/Products.vue'),
+      },
+      {
+        path: "/schedule",
+        component: () => import('../views/Schedule.vue'),
       },
     //   { path: "/cafes/:id", component: CafeView },
-    // ],
+    ],
   });
   
   export default router;

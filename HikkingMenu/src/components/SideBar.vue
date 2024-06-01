@@ -20,11 +20,11 @@
         <span class="material-icons">dining</span>
         <span class="text">Menu</span>
       </router-link>
-      <router-link to="/" class="button">
+      <router-link to="/products" class="button">
         <span class="material-icons">category</span>
         <span class="text">Products</span>
       </router-link>
-      <router-link to="/" class="button">
+      <router-link to="/schedule" class="button">
         <span class="material-icons">menu_book</span>
         <span class="text">Schedule</span>
       </router-link>
@@ -33,7 +33,7 @@
     <div class="flex"></div>
 
     <div class="menu">
-      <router-link to="" class="button">
+      <router-link to="/" class="button">
         <span class="material-icons">settings</span>
         <span class="text">Settings</span>
       </router-link>
@@ -57,15 +57,12 @@ const ToggleMenu = () => {
 aside {
   display: flex;
   flex-direction: column;
-
   background-color: var(--dark-color);
   color: var(--light-color);
-
   width: calc(2rem + 2rem);
   overflow: hidden;
   min-height: 100vh;
   padding: 1rem;
-
   transition: 0.2s ease-in-out;
 
   .flex {
@@ -84,7 +81,6 @@ aside {
     display: flex;
     justify-content: flex-end;
     margin-bottom: 1rem;
-
     position: relative;
     top: 0;
     transition: 0.2s ease-in-out;
