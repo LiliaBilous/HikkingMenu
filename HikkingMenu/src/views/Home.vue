@@ -2,7 +2,7 @@
   <main class="home-page__container">
     <section class="hero">
       <h1 class="hero__header header">
-        Menu constructor for hikking Hiking meal planner
+        HikkingMealPlanner
       </h1>
       <p class="hero__subtitle">
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium iste

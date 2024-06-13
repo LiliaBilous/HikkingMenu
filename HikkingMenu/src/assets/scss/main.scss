@@ -10,24 +10,11 @@
     --white-color: #fff;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+body {
+    background: var(--light);
     font-family: "Fira sans", sans-serif;
 }
 
-body {
-    background: var(--light);
-}
-
-button {
-    cursor: pointer;
-    appearance: none;
-    border: none;
-    outline: none;
-    background: none;
-}
 
 .app {
     display: flex;
@@ -41,3 +28,5 @@ button {
         }
     }
 }
+
+@import "./reset";
