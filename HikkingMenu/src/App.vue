@@ -10,47 +10,5 @@ import SideBar from "./components/SideBar.vue";
 </script>
 
 <style lang="scss">
-:root {
-  --primary-color: #458670;
-  --primary-alt-color: #e5f5bd;
-  --main-grey-color: #98989a;
-  --dark-color: #333333;
-  --dark-alt-color: #656567;
-  --light-color: #e6e6e6;
-  --sidebar-width: 300px;
-  --black-color: #000;
-  --white-color: #fff;
-}
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Fira sans", sans-serif;
-}
-
-body {
-  background: var(--light);
-}
-
-button {
-  cursor: pointer;
-  appearance: none;
-  border: none;
-  outline: none;
-  background: none;
-}
-
-.app {
-  display: flex;
-
-  main {
-    flex: 1 1 0;
-    padding: 2rem;
-
-    @media (max-width: 1024px) {
-      padding-left: 6rem;
-    }
-  }
-}
 </style>
