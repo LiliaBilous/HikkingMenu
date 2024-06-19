@@ -5,22 +5,18 @@ export default {
   data() {
     return {
       products,
-      title: ""
+      title: "",
     };
   },
   computed: {
-      productGroup() {
-        
-      },
-      productsOfGroup(){
-        
-      }
+    productGroup() {},
+    productsOfGroup() {},
+  },
+  methods: {
+    activeGroup() {
+      console.log();
     },
-    methods: {
-      activeGroup(){
-        
-      }
-    },
+  },
 };
 </script>
 <template>
@@ -28,14 +24,15 @@ export default {
     <div class="products__container">
       <div class="products__header">
         <nav class="products__header-navigation">
-          <ul class="navigation-list">
+          <ul class="header-navigation__list">
             <li
               v-for="product in products"
               :key="product.title"
-              class="navigation-item active-item"
-              @click="activeGroup()"
+              class="header-navigation__item active-item"
             >
-              {{ product.title }}
+              <a href="#" @click="activeGroup" class="header-navigation__link">{{
+                product.title
+              }}</a>
             </li>
           </ul>
         </nav>
@@ -45,7 +42,7 @@ export default {
         </div>
       </div>
       <div class="products__list product-list">
-        <h2 class="product-list__title">{{  }}</h2>
+        <h2 class="product-list__title">{{}}</h2>
         <table class="product-list__table">
           <thead>
             <tr class="table__header">
@@ -110,16 +107,18 @@ export default {
   }
 }
 
-.navigation {
-  &-list {
+.header-navigation {
+  &__list {
     display: flex;
     flex-direction: row;
     width: max-content;
     background-color: #e6e6e6;
     border-radius: 0.5rem;
+  }
+  &__item {
     padding: 0.5rem 1rem;
   }
-  &-item {
+  &__link {
     padding: 0.5rem 1rem;
   }
 }
