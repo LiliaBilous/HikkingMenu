@@ -1,20 +1,20 @@
 <script>
 import products from "../../products.json";
-
+let selectedGroup;
 export default {
   data() {
     return {
       products,
-      title: "",
     };
   },
   computed: {
-    productGroup() {},
+    // productGroup() {},
     productsOfGroup() {},
   },
   methods: {
-    activeGroup() {
-      console.log();
+    activeGroup(title) {
+      title = selectedGroup;
+      console.log(selectedGroup);
     },
   },
 };
@@ -30,7 +30,7 @@ export default {
               :key="product.title"
               class="header-navigation__item active-item"
             >
-              <a href="#" @click="activeGroup" class="header-navigation__link">{{
+              <a href="#" @click="activeGroup(product.title)" class="header-navigation__link">{{
                 product.title
               }}</a>
             </li>
@@ -42,7 +42,7 @@ export default {
         </div>
       </div>
       <div class="products__list product-list">
-        <h2 class="product-list__title">{{}}</h2>
+        <h2 class="product-list__title">{{  }}</h2>
         <table class="product-list__table">
           <thead>
             <tr class="table__header">
@@ -56,15 +56,15 @@ export default {
             </tr>
           </thead>
           <tbody>
-            <!-- <tr v-for="product in productsOfGroup" :key="product.id" class="table__row">
+            <!-- <tr v-for="product in products" :key="product.id" class="table__row">
               <th>
-                Сухарі пшеничні <span class="material-icons"> open_in_new_down </span>
+                {{ product.name }} <span class="material-icons"> open_in_new_down </span>
               </th>
-              <td>20.00</td>
-              <td>20.00</td>
-              <td>20.00</td>
-              <td>20.00</td>
-              <td>20.00</td>
+              <td>{{ product.portion }}</td>
+              <td>{{ product.calories }}</td>
+              <td>{{ product.proteins }}</td>
+              <td>{{ product.fats }}</td>
+              <td>{{ product.carbohydrates }}</td>
               <td><span class="material-icons">remove</span></td>
             </tr> -->
             <tr class="table__row">
@@ -116,10 +116,10 @@ export default {
     border-radius: 0.5rem;
   }
   &__item {
-    padding: 0.5rem 1rem;
+    padding: 0.5rem;
   }
   &__link {
-    padding: 0.5rem 1rem;
+    padding: 1rem 0.5rem;
   }
 }
 
