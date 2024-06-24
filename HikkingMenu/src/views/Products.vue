@@ -5,6 +5,7 @@ export default {
   data() {
     return {
       products,
+      group: []
     };
   },
   computed: {
@@ -12,9 +13,8 @@ export default {
     productsOfGroup() {},
   },
   methods: {
-    activeGroup(title) {
-      title = selectedGroup;
-      console.log(selectedGroup);
+    activeGroup(selectedGroup) {
+      return this.group = selectedGroup;
     },
   },
 };
@@ -30,7 +30,7 @@ export default {
               :key="product.title"
               class="header-navigation__item active-item"
             >
-              <a href="#" @click="activeGroup(product.title)" class="header-navigation__link">{{
+              <a href="#" @click="activeGroup(product.item)" class="header-navigation__link">{{
                 product.title
               }}</a>
             </li>
@@ -56,28 +56,16 @@ export default {
             </tr>
           </thead>
           <tbody>
-            <!-- <tr v-for="product in products" :key="product.id" class="table__row">
-              <th>
-                {{ product.name }} <span class="material-icons"> open_in_new_down </span>
-              </th>
-              <td>{{ product.portion }}</td>
-              <td>{{ product.calories }}</td>
-              <td>{{ product.proteins }}</td>
-              <td>{{ product.fats }}</td>
-              <td>{{ product.carbohydrates }}</td>
-              <td><span class="material-icons">remove</span></td>
-            </tr> -->
-            <tr class="table__row">
-              <th>
-                Сухарі пшеничні <span class="material-icons"> open_in_new_down </span>
-              </th>
-              <td>20.00</td>
-              <td>20.00</td>
-              <td>20.00</td>
-              <td>20.00</td>
-              <td>20.00</td>
+            <tr v-for="elem in group" :key="elem.id" class="table__row">
+              <th>{{ elem.name }}</th>
+              <td>{{ elem.portion }}</td>
+              <td>{{ elem.calories }}</td>
+              <td>{{ elem.proteins }}</td>
+              <td>{{ elem.fats }}</td>
+              <td>{{ elem.carbohydrates }}</td>
               <td><span class="material-icons">remove</span></td>
             </tr>
+            
           </tbody>
         </table>
       </div>
