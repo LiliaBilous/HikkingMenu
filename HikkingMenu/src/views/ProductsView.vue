@@ -5,16 +5,19 @@ export default {
   data() {
     return {
       products,
-      group: []
+      group: [],
     };
   },
   computed: {
-    // productGroup() {},
-    productsOfGroup() {},
+    addProduct(){},
+    removeProduct(){},
+    filterByGroup(){
+
+    }
   },
   methods: {
     activeGroup(selectedGroup) {
-      return this.group = selectedGroup;
+      return (this.group = selectedGroup);
     },
   },
 };
@@ -25,14 +28,23 @@ export default {
       <div class="products__header">
         <nav class="products__header-navigation">
           <ul class="header-navigation__list">
-            <li
-              v-for="product in products"
-              :key="product.title"
-              class="header-navigation__item active-item"
-            >
-              <a href="#" @click="activeGroup(product.item)" class="header-navigation__link">{{
-                product.title
-              }}</a>
+            <li class="header-navigation__item active-item">
+              <a href="#" @click="activeGroup" class="header-navigation__link">Хліб</a>
+            </li>
+            <li class="header-navigation__item active-item">
+              <a href="#" @click="activeGroup" class="header-navigation__link">Крупи</a>
+            </li>
+            <li class="header-navigation__item active-item">
+              <a href="#" @click="activeGroup" class="header-navigation__link">Мясо</a>
+            </li>
+            <li class="header-navigation__item active-item">
+              <a href="#" @click="activeGroup" class="header-navigation__link">Солодке</a>
+            </li>
+            <li class="header-navigation__item active-item">
+              <a href="#" @click="activeGroup" class="header-navigation__link">Карманка</a>
+            </li>
+            <li class="header-navigation__item active-item">
+              <a href="#" @click="activeGroup" class="header-navigation__link">Інше</a>
             </li>
           </ul>
         </nav>
@@ -42,12 +54,10 @@ export default {
         </div>
       </div>
       <div class="products__list product-list">
-        <h2 class="product-list__title">{{  }}</h2>
         <table class="product-list__table">
           <thead>
             <tr class="table__header">
               <th>Продукт</th>
-              <th>Порція на людину, гр</th>
               <th>Калорійність на 100гр, ккал</th>
               <th>Білки на 100гр, гр</th>
               <th>Жири на 100гр, гр</th>
@@ -56,17 +66,21 @@ export default {
             </tr>
           </thead>
           <tbody>
-            <tr v-for="elem in group" :key="elem.id" class="table__row">
-              <th>{{ elem.name }}</th>
-              <td>{{ elem.portion }}</td>
-              <td>{{ elem.calories }}</td>
-              <td>{{ elem.proteins }}</td>
-              <td>{{ elem.fats }}</td>
-              <td>{{ elem.carbohydrates }}</td>
+            <tr v-for="product in products" :key="product.id" class="table__row">
+              <td>{{ product.name }}</td>
+              <td>{{ product.calories }}</td>
+              <td>{{ product.proteins }}</td>
+              <td>{{ product.fats }}</td>
+              <td>{{ product.carbohydrates }}</td>
               <td><span class="material-icons">remove</span></td>
             </tr>
-            
+            <tr>
+              <td>Додати продукт<span class="material-icons">add_circle</span></td>
+            </tr>
           </tbody>
+          <tfoot>
+            
+          </tfoot>
         </table>
       </div>
     </div>
@@ -138,10 +152,17 @@ export default {
 }
 
 .table__header {
+  th, td {
+    border-bottom: #e6e6e6 1px solid;
+    padding: 0.5rem;
+  }
 }
 .table__row {
-  border: 1px solid grey;
-  padding: 1rem;
-  // background-color: greenyellow;
-}
+  td {
+    border-bottom: #e6e6e6 1px solid;
+    text-align: center;
+  }
+  
+} 
+
 </style>
