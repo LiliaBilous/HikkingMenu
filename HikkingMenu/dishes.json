@@ -325,8 +325,7 @@
         {
             "id": 132,
             "name": "Солодка каша",
-            "portion": "",
-            "products": [
+            "ingredients": [
                 {
                     "id": 11,
                     "name": "Рис",
@@ -363,17 +362,12 @@
                     "fats": 0.5,
                     "carbohydrates": 75
                 }
-            ],
-            "calories": "",
-            "proteins": "",
-            "fats": "",
-            "carbohydrates": ""
+            ]
         },
         {
             "id": 132,
             "name": "Борщ",
-            "portion": "",
-            "products": [
+            "ingredients": [
                 {
                     "id": 34,
                     "name": "Морква сушена",
@@ -437,17 +431,12 @@
                     "fats": 2,
                     "carbohydrates": 46.6
                 }
-            ],
-            "calories": "",
-            "proteins": "",
-            "fats": "",
-            "carbohydrates": ""
+            ]
         },
         {
             "id": 133,
             "name": "Суп сочевичний",
-            "portion": "",
-            "products": [
+            "ingredients": [
                 {
                     "id": 16,
                     "name": "Сочевиця для супу",
@@ -493,17 +482,12 @@
                     "fats": 0.27,
                     "carbohydrates": 25
                 }
-            ],
-            "calories": "",
-            "proteins": "",
-            "fats": "",
-            "carbohydrates": ""
+            ]
         },
         {
             "id": 134,
             "name": "Кулеша з грибами",
-            "portion": "",
-            "products": [
+            "ingredients": [
                 {
                     "id": 12,
                     "name": "Пшоно",
@@ -540,11 +524,7 @@
                     "fats": 99.5,
                     "carbohydrates": 0
                 }
-            ],
-            "calories": "",
-            "proteins": "",
-            "fats": "",
-            "carbohydrates": ""
+            ]
         }
     ]
 }

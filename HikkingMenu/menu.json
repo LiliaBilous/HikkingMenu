@@ -1,3 +1,261 @@
 {
-
+    "day": {
+        "title": "День 1",
+        "meals": {
+            "breakfast": [
+                {
+                    "type": "readyDish",
+                    "name": "Бананова каша Їдло",
+                    "portion": 55.00,
+                    "calories": 350.00,
+                    "protein": 25.00,
+                    "fat": 5.00,
+                    "carbohydrates": 55.00
+                },
+                {
+                    "type": "supplements",
+                    "id": 24,
+                    "name": "Твердий сир витриманий",
+                    "calories": 347,
+                    "proteins": 22.5,
+                    "fats": 28.5,
+                    "carbohydrates": 4.7
+                },
+                {
+                    "type": "bread",
+                    "id": 8,
+                    "name": "Бублики",
+                    "productGroup": "Хлібні",
+                    "calories": 424,
+                    "proteins": 8.2,
+                    "fats": 8.6,
+                    "carbohydrates": 78.5
+                },
+                {
+                    "type": "drink",
+                    "id": 79,
+                    "name": "кава",
+                    "productGroup": "Спеції та додатки",
+                    "calories": 60,
+                    "proteins": 0.12,
+                    "fats": 0.2,
+                    "carbohydrates": 0
+                },
+                {
+                    "type": "sweets",
+                    "id": 73,
+                    "name": "Халва",
+                    "productGroup": "Солодке",
+                    "calories": 550,
+                    "proteins": 13.5,
+                    "fats": 38.8,
+                    "carbohydrates": 40.6
+                }
+            ],
+            "lunch": [
+                {
+                    "id": 132,
+                    "name": "Борщ",
+                    "ingredients": [
+                        {
+                            "id": 34,
+                            "name": "Морква сушена",
+                            "portion": 10,
+                            "calories": 226,
+                            "proteins": 7.8,
+                            "fats": 0.60,
+                            "carbohydrates": 56.4
+                        },
+                        {
+                            "id": 35,
+                            "name": "Цибуля сушена",
+                            "portion": 3,
+                            "calories": 208,
+                            "proteins": 8,
+                            "fats": 3,
+                            "carbohydrates": 42
+                        },
+                        {
+                            "id": 36,
+                            "name": "Картопля сушена",
+                            "portion": 10,
+                            "calories": 286,
+                            "proteins": 6.6,
+                            "fats": 0.30,
+                            "carbohydrates": 71.6
+                        },
+                        {
+                            "id": 38,
+                            "name": "Буряк сушений",
+                            "portion": 5,
+                            "calories": 253,
+                            "proteins": 9,
+                            "fats": 0.2,
+                            "carbohydrates": 56
+                        },
+                        {
+                            "id": 39,
+                            "name": "Капуста сушена",
+                            "portion": 10,
+                            "calories": 278,
+                            "proteins": 15,
+                            "fats": 1.4,
+                            "carbohydrates": 48
+                        },
+                        {
+                            "id": 40,
+                            "name": "Томатна паста висушена",
+                            "portion": 3,
+                            "calories": 258,
+                            "proteins": 14.1,
+                            "fats": 3,
+                            "carbohydrates": 43.5
+                        },
+                        {
+                            "id": 42,
+                            "name": "Фасоля сушена",
+                            "portion": 20,
+                            "calories": 292,
+                            "proteins": 21,
+                            "fats": 2,
+                            "carbohydrates": 46.6
+                        }
+                    ]
+                },
+                {
+                    "id": 1,
+                    "productGroup": "Хлібні",
+                    "name": "Кріспи",
+                    "calories": 295.2,
+                    "proteins": 10,
+                    "fats": 2.6,
+                    "carbohydrates": 61
+                },
+                {
+                    "id": 30,
+                    "name": "Сало",
+                    "productGroup": "Жири",
+                    "calories": 896,
+                    "proteins": 0.2,
+                    "fats": 99.5,
+                    "carbohydrates": 0
+                },
+                {
+                    "id": 76,
+                    "name": "Часник свіжий",
+                    "productGroup": "Спеції та додатки",
+                    "calories": 130,
+                    "proteins": 6.21,
+                    "fats": 0.27,
+                    "carbohydrates": 25
+                }
+            ],
+            "dinner": [
+                {
+                    "id": 134,
+                    "name": "Кулеша з грибами",
+                    "ingredients": [
+                        {
+                            "id": 12,
+                            "name": "Пшоно",
+                            "portion": 65,
+                            "calories": 350,
+                            "proteins": 9.8,
+                            "fats": 1.5,
+                            "carbohydrates": 73.9
+                        },
+                        {
+                            "id": 27,
+                            "name": "Гриби",
+                            "portion": 20,
+                            "calories": 268,
+                            "proteins": 30.3,
+                            "fats": 6,
+                            "carbohydrates": 20
+                        },
+                        {
+                            "id": 36,
+                            "name": "Картопля сушена",
+                            "portion": 10,
+                            "calories": 286,
+                            "proteins": 6.6,
+                            "fats": 0.30,
+                            "carbohydrates": 71.6
+                        },
+                        {
+                            "id": 30,
+                            "name": "Сало",
+                            "portion": 20,
+                            "calories": 896,
+                            "proteins": 0.2,
+                            "fats": 99.5,
+                            "carbohydrates": 0
+                        }
+                    ]
+                },
+                {
+                    "id": 2,
+                    "productGroup": "Хлібні",
+                    "name": "Хлібці(пінопласт)",
+                    "calories": 379,
+                    "proteins": 11,
+                    "fats": 2.7,
+                    "carbohydrates": 77.5
+                },
+                {
+                    "id": 21,
+                    "name": "Паштет",
+                    "productGroup": "М'ясо та інші білки",
+                    "calories": 220,
+                    "proteins": 12,
+                    "fats": 15,
+                    "carbohydrates": 8
+                },
+                {
+                    "id": 72,
+                    "name": "Ірис Milky Splash",
+                    "productGroup":  "Солодке",
+                    "calories": 513,
+                    "proteins": 3.8,
+                    "fats": 28.3,
+                    "carbohydrates": 61.2
+                },
+                {
+                    "id": 81,
+                    "name": "чай чорний",
+                    "productGroup": "Спеції та додатки",
+                    "calories": 140
+                }
+            ],
+            "snack": [
+                {
+                    "id": 53,
+                    "name": "Фініки",
+                    "productGroup": "Перекуси",
+                    "calories": 300,
+                    "proteins": 2,
+                    "fats": 1.3,
+                    "carbohydrates": 64
+                },
+                {
+                    "id": 55,
+                    "name": "Сушенне яблуко",
+                    "productGroup": "Перекуси",
+                    "calories": 246,
+                    "proteins": 2.2,
+                    "fats": 0.1,
+                    "carbohydrates": 59
+                },
+                {
+                    "id": 89,
+                    "name": "NuttyWay",
+                    "productGroup": "Батончики",
+                    "calories": 386,
+                    "proteins": 4.2,
+                    "fats": 14.7,
+                    "carbohydrates": 59.3
+                }
+            ]
+        }
+    }
 }
